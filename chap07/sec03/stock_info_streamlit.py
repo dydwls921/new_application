@@ -8,7 +8,7 @@ from collections import defaultdict
 
 load_dotenv()
 #api_key = os.getenv("OPENAI_API_KEY")  # 환경 변수에서 API 키 가져오기
-api_key = st.secrets["OPENAI_API_KEY"]
+api_key = st.secrets["openai"]["api_key"]
 
 client = OpenAI(api_key=api_key)  # 오픈AI 클라이언트의 인스턴스 생성
 
